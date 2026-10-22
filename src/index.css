@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0f1b34;
+  --color-ink-soft: #55607a;
+  --color-line: #e3e8f2;
+  --color-canvas: #f6f8fc;
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #dbe7ff;
+  --color-brand-500: #2f6bff;
+  --color-brand-600: #1f55e0;
+  --color-brand-700: #1a44b3;
+  --color-sun-100: #fff3c4;
+  --color-sun-400: #ffcb2e;
+  --color-sun-500: #f5b800;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-sun-400);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-sun-400);
+    outline-offset: 2px;
+  }
+}

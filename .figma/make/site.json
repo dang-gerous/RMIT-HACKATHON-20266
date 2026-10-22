@@ -1,0 +1,10 @@
+{
+  "description": "Streamline your rental business with a user-friendly app featuring a simple design, vibrant blue and yellow accents, and easy login access.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
